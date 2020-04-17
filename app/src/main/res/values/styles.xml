@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <!-- not need ActionBar -->
+        <item name="windowActionBar">false</item>
+
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <!--<item name="colorPrimaryVariant">@color/primaryLightColor</item>-->
+        <item name="colorAccent">@color/secondaryColor</item>
+        <item name="colorSecondary">@color/secondaryDarkColor</item>
+        <!--<item name="colorSecondaryVariant">@color/secondaryLightColor</item>-->
+    </style>
+
+    <!-- ↓↓↓↓↓↓↓↓↓↓ Button ↓↓↓↓↓↓↓↓↓↓ -->
+    <style name="BtnGreenBoxStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_a1a2a2</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/btn_gree_box_selector</item>
+    </style>
+
+    <style name="BtnGreenBoxStyle.Space">
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <style name="BottomGreenButtonFullWidthStyle" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/default_button_color_selector</item>
+        <item name="android:background">@drawable/bg_green_action_selector</item>
+    </style>
+
+    <!-- ↑↑↑↑↑↑↑↑↑↑ Button ↑↑↑↑↑↑↑↑↑↑ -->
+
+    <!-- ↓↓↓↓↓↓↓↓↓↓ TextInput ↓↓↓↓↓↓↓↓↓↓ -->
+
+    <style name="TextInputEditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="colorControlNormal">@color/gray_efefef</item>
+        <item name="colorAccent">@color/green_72af2d</item>
+    </style>
+
+    <style name="TextInputHint" parent="TextAppearance.Design.Hint">
+        <item name="android:textColor">@color/gray_757575</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="TextInputError" parent="TextAppearance.Design.Error">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/orange_fc8068</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- ↑↑↑↑↑↑↑↑↑↑ TextInput ↑↑↑↑↑↑↑↑↑↑ -->
+
+
+    <style name="CustomProgressDialog" parent="Theme.MaterialComponents.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="ContentDateTextStyle">
+        <item name="android:textColor">@color/gray_757575</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>

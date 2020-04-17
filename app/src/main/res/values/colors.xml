@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#ff81c784</color>
+    <color name="primaryLightColor">#ffb2fab4</color>
+    <color name="primaryDarkColor">#ff519657</color>
+    <color name="secondaryColor">#ffffb74d</color>
+    <color name="secondaryLightColor">#ffffe97d</color>
+    <color name="secondaryDarkColor">#ffc88719</color>
+    <color name="primaryTextColor">#ff000000</color>
+    <color name="secondaryTextColor">#ff000000</color>
+
+
+    <color name="white_color">#ffffffff</color>
+
+    <!--gray-->
+    <color name="gray_e5e5e5">#ffe5e5e5</color>
+    <color name="gray_a1a2a2">#ffa1a2a2</color>
+    <color name="gray_efefef">#ffefefef</color>
+    <color name="gray_757575">#ff757575</color>
+    <color name="gray_e2e8ed">#ffe2e8ed</color>
+
+
+    <!---->
+    <color name="yellow_ddc71d">#ffddc71d</color>
+    <color name="yellow_fcea5f">#fffcea5f</color>
+
+    <!--green-->
+    <color name="green_f5f9de">#fff5f9de</color>
+    <color name="green_9fb51c">#ff9fb51c</color>
+    <color name="green_13502f">#ff13502f</color>
+    <color name="green_0e6462">#ff0e6462</color>
+    <color name="green_72af2d">#ff72af2d</color>
+    <color name="green_1aa046">#ff1aa046</color>
+
+    <color name="orange_ef3f1d">#ffef3f1d</color>
+    <color name="orange_fc8068">#fffc8068</color>
+    <color name="orange_ff892a">#ffff892a</color>
+
+    <color name="black_191E22">#ff191E22</color>
+    <color name="black_7f000000">#7F000000</color>
+
+    <color name="red_ff0e00">#ffff0e00</color>
+    <color name="red_e60e1a">#ffe60e1a</color>
+
+
+
+
+</resources>

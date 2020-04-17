@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        />
+
+    <RelativeLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        >
+
+        <TextView
+            style="@style/ContentDateTextStyle"
+            android:id="@+id/name_label"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewEnd"
+            android:text="姓名："/>
+
+        <TextView
+            style="@style/ContentDateTextStyle"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name_label"
+            android:layout_alignTop="@+id/name_label"
+            android:text="黃偉誠"
+            />
+
+        <TextView
+            style="@style/ContentDateTextStyle"
+            android:id="@+id/phone_label"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_label"
+            android:textAlignment="viewEnd"
+            android:text="聯絡電話："
+            />
+        <TextView
+            style="@style/ContentDateTextStyle"
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/phone_label"
+            android:layout_alignTop="@+id/phone_label"
+            android:text="0939430686"
+            />
+
+        <TextView
+            style="@style/ContentDateTextStyle"
+            android:id="@+id/email_label"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone_label"
+            android:textAlignment="viewEnd"
+            android:text="聯絡信箱："
+            />
+        <TextView
+            style="@style/ContentDateTextStyle"
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/email_label"
+            android:layout_alignTop="@+id/email_label"
+            android:text="ziv0812.huang@gmail.com"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

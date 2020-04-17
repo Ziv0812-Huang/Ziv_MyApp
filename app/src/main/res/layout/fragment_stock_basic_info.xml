@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="StockBasicInfoFragmentBinding"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/search_label"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="搜尋"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/search_input"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/search_label"
+            android:layout_alignParentEnd="true"
+            android:layout_height="40dp"
+            android:inputType="text"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:singleLine="true"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/search_input">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp">
+
+                <TextView
+                    android:id="@+id/store_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_store_stock"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/store_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/store_label"
+                    android:scrollbars="vertical"/>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</layout>

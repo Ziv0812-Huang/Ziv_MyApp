@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">MyApp</string>
+
+    <string name="home_title">Ziv Huang\'s App</string>
+    <string name="menu_list_drawer_open">Menu Opened</string>
+    <string name="menu_list_drawer_close">Menu Closed</string>
+
+    <string name="txt_version_name">軟體版本：%1$1s</string>
+
+    <string name="menu_action_home">首頁</string>
+    <string name="menu_action_item_a">國家列表</string>
+    <string name="menu_action_item_b">問題回報</string>
+    <string name="menu_action_item_c">股市設定</string>
+    <string name="menu_action_item_d">每日股市</string>
+    <string name="menu_action_item_e">電視節目表</string>
+
+
+    <string name="txt_store_stock">自選股</string>
+    <string name="txt_stock_view">前交易日股票交易資訊(非即時交易)</string>
+
+    <string name="txt_exit_app">是否離開APP？？</string>
+    <string name="txt_exit_no">否</string>
+    <string name="txt_exit_ok">是</string>
+    <string name="txt_active">執行</string>
+    <string name="txt_ok">確認</string>
+    <string name="txt_send_no">未傳送</string>
+    <string name="txt_send_ok">回報完成</string>
+
+    <string name="tab_tv_program_list">節目表</string>
+    <string name="tab_tv_program_detail">節目內容</string>
+
+
+    <string name="label_name">聯絡人姓名(必填)</string>
+    <string name="label_content">回報資訊(必填)</string>
+    <string name="label_phone">聯絡人電話(必填)</string>
+
+    <string name="request_permission">請求權限</string>
+    <string name="insufficient_permissions_title">APP權限不足</string>
+    <string name="insufficient_permissions_notify">無足夠權限執行APP，系統將自動離開。</string>
+    <string name="txt_permissions_setting">請設定請求權限</string>
+
+    <string name="txt_report_finish">是否已經回報完成？？</string>
+    <string name="txt_report_thks">感謝您的回報!!</string>
+    <string name="txt_exit_new">感謝您的使用!!</string>
+
+</resources>

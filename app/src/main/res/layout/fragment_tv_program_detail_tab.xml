@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data class="TvProgramDetailFragmentBinding">
+        <variable
+            name="programEntity"
+            type="com.myapp.room.model.entity.TvProgramEntity" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/iv_photo"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="32sp"
+                android:text="@{programEntity.name}"
+                tools:text="獅子王強大"/>
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="160dp"
+                android:layout_height="270dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/line_tv_program"/>
+
+            <TextView
+                android:id="@+id/lb_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginStart="10dp"
+                android:layout_alignStart="@+id/tv_name"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:text="評分 : "/>
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_toEndOf="@+id/lb_rating"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:text="@{programEntity.rating.toString()}"
+                tools:text="4.3813"/>
+
+            <TextView
+                android:id="@+id/lb_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_rating"
+                android:layout_marginStart="10dp"
+                android:layout_alignStart="@+id/tv_name"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:text="出版日期 : "/>
+
+            <TextView
+                android:id="@+id/tv_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lb_created"
+                android:layout_alignStart="@+id/tv_name"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:text="@{programEntity.createdAt.substring(0,10)}"
+                tools:text="2020/04/06"/>
+
+            <TextView
+                android:id="@+id/lb_totalview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_created"
+                android:layout_marginStart="10dp"
+                android:layout_alignStart="@+id/tv_name"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:text="觀看次數 : "/>
+
+            <TextView
+                android:id="@+id/tv_totalview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lb_totalview"
+                android:layout_alignStart="@+id/tv_name"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:text="@{programEntity.totalViews.toString()}"
+                tools:text="2020"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
